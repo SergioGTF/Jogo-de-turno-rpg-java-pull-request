@@ -14,15 +14,15 @@ public class GerenciadorInimigos {
         switch (caminhoEscolhido) {
             case 1:
                 Adversario Enderman = new Adversario("Enderman", 40, 6, 4, 8, 5);
-                Enderman.equiparArma(new Arma("Dano", 10, "leve"));
+                Enderman.equiparArma(new Arma("Dano", 20, "leve"));
                 adversarios.add(Enderman);
 
                 Adversario Whiter = new Adversario("Whiter", 60, 8, 5, 7, 6);
-                Whiter.equiparArma(new Arma("Cabeças explosivas", 12, "leve"));
+                Whiter.equiparArma(new Arma("Cabeças explosivas", 22, "leve"));
                 adversarios.add(Whiter);
 
                 Adversario Warden = new Adversario("Warden", 80, 10, 6, 5, 4);
-                Warden.equiparArma(new Arma("Ataque sônico", 14, "pesada"));
+                Warden.equiparArma(new Arma("Ataque sônico", 24, "pesada"));
                 adversarios.add(Warden);
                 break;
 
@@ -45,9 +45,9 @@ public class GerenciadorInimigos {
                 escorpiaoGigante.equiparArma(new Arma("Ferrão Mortal", 12, "leve"));
                 adversarios.add(escorpiaoGigante);
 
-                Adversario elementalFogo = new Adversario("Elemental de Fogo", 70, 10, 5, 7, 5);
-                elementalFogo.equiparArma(new Arma("Tornado de Areia e Fogo", 14, "leve"));
-                adversarios.add(elementalFogo);
+                Adversario Blaze = new Adversario("Blaze", 70, 10, 5, 7, 5);
+                Blaze.equiparArma(new Arma("Tornado de Areia e Fogo", 14, "leve"));
+                adversarios.add(Blaze);
 
                 Adversario serpenteAreia = new Adversario("Serpente de Areia", 65, 9, 6, 7, 6);
                 serpenteAreia.equiparArma(new Arma("Bote Letal", 13, "leve"));
@@ -83,9 +83,9 @@ public class GerenciadorInimigos {
                 golemGelo.equiparArma(new Arma("Socos congelantes", 15, "pesada"));
                 adversarios.add(golemGelo);
 
-                Adversario dragaoBranco = new Adversario("Dragão de Gelo Jovem", 85, 15, 9, 8, 7);
-                dragaoBranco.equiparArma(new Arma("Chamas Frias", 16, "leve"));
-                adversarios.add(dragaoBranco);
+                Adversario dragaoGelo = new Adversario("Dragão de Gelo Jovem", 85, 15, 9, 8, 7);
+                dragaoGelo.equiparArma(new Arma("Chamas Frias", 16, "leve"));
+                adversarios.add(dragaoGelo);
                 break;
 
             case 3:
@@ -129,6 +129,6 @@ public class GerenciadorInimigos {
                 Adversario monarcaSombrasPadrao = new Adversario("Monarca das Sombras", 200, 25, 15, 10, 8);
                 monarcaSombrasPadrao.equiparArma(new Arma("Espada das Trevas", 20, "pesada"));
                 return monarcaSombrasPadrao;
-        }    
+        }
     }
 }

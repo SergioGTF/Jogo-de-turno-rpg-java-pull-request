@@ -1,7 +1,6 @@
 package Personagens;
 
 import java.util.Random;
-
 import Armamento.Arma;
 import Armamento.Armadura;
 
@@ -33,10 +32,6 @@ public abstract class Personagem {
         return vida;
     }
 
-    public void setVida(int vida) {
-        this.vida = vida;
-    }
-
     public int getForca() {
         return forca;
     }
@@ -53,6 +48,35 @@ public abstract class Personagem {
         return destreza;
     }
 
+    public Arma getArma() {
+        return arma;
+    }
+
+    public Armadura getArmadura() {
+        return armadura;
+    }
+
+    public void setForca(int forca) {
+        this.forca = forca;
+    }
+
+    public void setConstituicao(int constituicao) {
+        this.constituicao = constituicao;
+    }
+
+    public void setAgilidade(int agilidade) {
+        this.agilidade = agilidade;
+    }
+
+    public void setDestreza(int destreza) {
+        this.destreza = destreza;
+    }
+
+    public void setVida(int vida) {
+        this.vida = vida;
+    }
+
+    // Outros métodos
     public void equiparArma(Arma arma) {
         this.arma = arma;
     }
@@ -86,8 +110,6 @@ public abstract class Personagem {
         return vida > 0;
     }
 
-    public abstract void realizarAcao(Personagem alvo);
-
     protected int rolarD6() {
         return new Random().nextInt(6) + 1;
     }
@@ -99,4 +121,6 @@ public abstract class Personagem {
     protected int rolarD4() {
         return new Random().nextInt(4) + 1;
     }
+
+    public abstract void realizarAcao(Personagem alvo);
 }
